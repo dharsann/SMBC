@@ -1,0 +1,6 @@
+node_modules/
+secret.txt
+test.js
+test.py
+package-lock.json
+package.json
