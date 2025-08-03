@@ -4,3 +4,4 @@ test.js
 test.py
 package-lock.json
 package.json
+.env
