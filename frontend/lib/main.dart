@@ -5,8 +5,8 @@ import 'package:http/http.dart' as http;
 
 import 'services/api_client.dart';
 import 'services/wallet_service.dart';
-import 'pages/login_page.dart' show LoginPage;
-import 'pages/home_page.dart' show HomePage;
+import 'pages/login_page.dart' as login_page;
+import 'pages/home_page.dart' as home_page;
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -46,8 +46,8 @@ class AuthGate extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer<Session>(
       builder: (_, session, __) => session.isAuthenticated
-          ? const HomePage()
-          : const LoginPage(),
+          ? const home_page.HomePage()
+          : const login_page.LoginPage(),
     );
   }
 }
