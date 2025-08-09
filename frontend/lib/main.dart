@@ -5,8 +5,8 @@ import 'package:http/http.dart' as http;
 
 import 'services/api_client.dart';
 import 'services/wallet_service.dart';
-import 'pages/login_page.dart';
-import 'pages/home_page.dart';
+import 'pages/login_page.dart' show LoginPage;
+import 'pages/home_page.dart' show HomePage;
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
