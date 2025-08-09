@@ -1,10 +1,10 @@
-@JS()
+@js.JS()
 library ethereum_web;
 
 import 'dart:js_util' as js_util;
-import 'package:js/js.dart';
+import 'dart:js_interop' as js;
 
-@JS('window.ethereum')
+@js.JS('window.ethereum')
 external Object? get _ethereum;
 
 Future<List<String>> ethRequestAccounts() async {
